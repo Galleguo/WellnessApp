@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "626170244000",
+    "firebase_url": "https://wellness-20b32.firebaseio.com",
+    "project_id": "wellness-20b32",
+    "storage_bucket": "wellness-20b32.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:626170244000:android:8bd24ed84b963d3c47d2c5",
+        "android_client_info": {
+          "package_name": "com.example.wellnessapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "626170244000-p0m55buanugpaah7aluvr4ai457fsejn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.wellnessapp",
+            "certificate_hash": "a6ecfe262bef42cdc90752f7c3cd61ba55089217"
+          }
+        },
+        {
+          "client_id": "626170244000-lt4get1rmahi9hjebeak69sdcr6hk9p3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDY3yEnzRmdasrhh_650fajSTRI9DAfPRw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "626170244000-88g5cblqfvoe3v752e0rvejpeijou7uk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

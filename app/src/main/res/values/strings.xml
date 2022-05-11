@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">WellnessApp</string>
+    <string-array name="listadeporte">
+        <item>-</item>
+        <item>Fútbol</item>
+        <item>Voley</item>
+        <item>Baloncesto</item>
+    </string-array>
+
+    <string-array name="listaclub">
+        <item>Club</item>
+        <item>Patronato</item>
+        <item>Echagüe-VSub14</item>
+        <item>Echagüe-VSub16</item>
+        <item>Echagüe-VPrimera</item>
+    </string-array>
+
+    <string-array name="listaactividad">
+        <item>Otro</item>
+        <item>Gimnasio</item>
+        <item>Técnico</item>
+        <item>Táctico</item>
+    </string-array>
+
+    <string-array name="puntuacion5">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="puntuacion10">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string name="saltar"><u>Skip</u></string>
+    <string name="atras"><u>Atrás</u></string>
+
+    <string name="recuperar"><b><u>Recuperar contraseña</u></b></string>
+    <string name="editar"><u><b>Editar</b></u></string>
+</resources>

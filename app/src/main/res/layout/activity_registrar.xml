@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registrar"
+    android:weightSum="10"
+    android:orientation="vertical"
+    android:background="#FFFF"
+    android:padding="15dp"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="8.5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/log_cliente"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Logearse con cliente"
+                        android:textSize="30sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Email cliente"
+                        android:id="@+id/TxtAcceso"
+                        android:inputType="textEmailAddress">
+                    </EditText>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Password cliente"
+                        android:id="@+id/PassCliente"
+                        android:inputType="textPassword">
+                    </EditText>
+
+                    <LinearLayout
+                        android:id="@+id/validate_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <Button
+                            android:layout_width="0px"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="Go_atras"
+                            android:text="Atrás"
+                            android:background="@drawable/btn_reg"
+                            android:textColor="@android:color/darker_gray"
+                            android:layout_marginRight="5dp">
+
+                        </Button>
+
+                        <Button
+                            android:layout_width="0px"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="validate_user"
+                            android:text="Validar"
+                            android:background="@drawable/btn_log"
+                            android:textColor="@android:color/white"
+                            android:layout_marginLeft="5dp">
+
+                        </Button>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/reg_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Registrar Usuario"
+                    android:textSize="30dp">
+                </TextView>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Apellido"
+                    android:id="@+id/TxtApellido">
+                </EditText>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nombre"
+                    android:id="@+id/TxtNombre">
+                </EditText>
+<!--
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Altura [cm]"
+                    android:id="@+id/TxtAltura"
+                    android:inputType="numberDecimal">
+                </EditText>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Peso [Kg]"
+                    android:id="@+id/TxtPeso"
+                    android:inputType="numberDecimal">
+                </EditText>
+-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/btn_reg"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Email Usuario"
+                        android:id="@+id/TxtEmail"
+                        android:inputType="textEmailAddress">
+                    </EditText>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Contraseña"
+                        android:id="@+id/TxtPassword1"
+                        android:inputType="numberPassword">
+                    </EditText>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Repetir Contraseña"
+                        android:id="@+id/TxtPassword2"
+                        android:inputType="numberPassword">
+                    </EditText>
+
+                </LinearLayout>
+
+                <!-- EDITABLE -->
+                <Spinner
+                    android:id="@+id/spClub"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:gravity="center_vertical"
+                    android:scrollbarSize="30dp"
+                    android:background="@drawable/btn_reg">
+                </Spinner>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <Spinner
+                        android:id="@+id/spDeporte"
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        android:padding="10dp"
+                        android:gravity="center_vertical"
+                        android:scrollbarSize="30dp"
+                        android:background="@drawable/btn_reg">
+                    </Spinner>
+
+                    <Spinner
+                        android:id="@+id/spPosicion"
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        android:padding="10dp"
+                        android:gravity="center_vertical"
+                        android:scrollbarSize="30dp"
+                        android:background="@drawable/btn_reg">
+                    </Spinner>
+
+<!-- SECCIÓN EDITABLE -->
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:orientation="vertical"
+        android:layout_weight="1.5"
+        android:layout_gravity="bottom"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/botonRegistrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="registrar"
+            android:text="Registrar"
+            android:visibility="invisible">
+
+        </Button>
+
+        <TextView
+            android:id="@+id/saltar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Go_atras"
+            android:text="@string/atras"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

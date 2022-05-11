@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WellnessActivity"
+    android:orientation="vertical"
+    android:background="#3400EAFF"
+    android:weightSum="10"
+    android:padding="10dp"
+    >
+
+
+    <!-- Titulo. En algubn momento será la información del usuario -->
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1.7">
+
+        <TextView
+            android:onClick="Go_pWellnes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ayuda"
+            android:drawableEnd="@drawable/ic_help"
+            android:gravity="right"
+            android:textColor="@android:color/black"></TextView>
+
+        <TextView
+            android:id="@+id/nombre_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Wellness"
+            android:textSize="30sp"
+            android:textColor="@android:color/black"/>
+    </RelativeLayout>
+
+
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="0.1"
+        android:background="?android:attr/listDivider" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="6.7">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- Mensaje de aviso -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:text="El botón superior derecho Ayuda indica el criterio de puntaje"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20sp">
+
+                </TextView>
+
+            </LinearLayout>
+
+
+            <!-- Puntuación wellness -->
+
+            <!-- Calidad del sueño -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/Qsueno"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Calidad de sueño"
+                    android:layout_weight="5"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/black"/>
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:id="@+id/spQsueno"
+                    android:background="#ffffff"/>
+
+            </LinearLayout>
+
+            <!-- Fatiga general -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/fatiga"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Fatiga general"
+                    android:layout_weight="5"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/black"/>
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:id="@+id/spfatiga"
+                    android:background="#ffffff"/>
+
+            </LinearLayout>
+
+            <!-- Molestia o cansancio muscular -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/muscular"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Dolor muscular"
+                    android:layout_weight="5"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/black"/>
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:id="@+id/spmuscular"
+                    android:background="#ffffff"/>
+
+            </LinearLayout>
+
+            <!-- Describir dolor -->
+
+            <LinearLayout
+                android:id="@+id/layoutDolor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <!-- Nivel de stress -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/stress"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Nivel de estrés"
+                    android:layout_weight="5"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/black"/>
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:id="@+id/spstress"
+                    android:background="#ffffff"/>
+
+            </LinearLayout>
+
+            <!-- Humor -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/humor"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Humor"
+                    android:layout_weight="5"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/black"/>
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:id="@+id/sphumor"
+                    android:background="#ffffff"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1.5"
+                android:orientation="vertical"
+                android:gravity="bottom"
+                android:layout_marginBottom="20dp"
+                android:weightSum="5">
+
+
+                <Button
+                    android:id="@+id/introduce"
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="2.5"
+                    android:autoSizeTextType="uniform"
+                    android:padding="15dp"
+                    android:background="@drawable/btn_uno"
+                    android:onClick="Go_postTrain"
+                    android:text="Siguiente"
+                    android:textColor="@drawable/txt_btn_uno" />
+
+                <TextView
+                    android:id="@+id/saltar"
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="1.5"
+                    android:onClick="Go_atras"
+                    android:text="@string/atras"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@android:color/black"
+                    android:autoSizeTextType="uniform"
+                    android:layout_marginTop="10dp"/>
+            </LinearLayout>
+
+
+
+</LinearLayout>
